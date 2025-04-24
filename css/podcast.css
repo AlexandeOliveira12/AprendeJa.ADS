@@ -2,21 +2,23 @@ html {
     scroll-behavior: smooth;
 }
 
-
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4; /* Cor de fundo suave para o corpo da página */
+    background: linear-gradient(135deg, #0d1b2a, #1b263b, #415a77); /* Degradê suave */
+    color: #f0f0f0; /* Texto em cor clara para contraste */
     padding-top: 50px; /* Ajuste conforme a altura do seu menu */
+    min-height: 100vh;
 }
 
+/* Estilo para o menu */
 #menu {
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1000;
-    /* Garante que o menu fique acima de outros conteúdos */
+    z-index: 1000; /* Garante que o menu fique acima de outros conteúdos */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra suave */
 }
 
 #menu ul {
@@ -24,112 +26,131 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #8A2BE2;
-    /* Cor de fundo roxa */
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-    /* Sombra suave */
+    background-color: #f8d302; /* Cor de fundo amarela */
+    display: flex;
+    justify-content: center; /* Alinha os itens do menu no centro */
 }
 
 #menu ul li {
-    float: left;
-    /* Alinha os itens do menu à esquerda */
+    position: relative;
 }
 
 #menu ul li a {
     display: block;
-    color: white;
-    /* Cor do texto */
+    color: #333; /* Cor de texto mais escura para contraste */
     text-align: center;
-    padding: 14px 16px;
+    padding: 14px 20px;
     text-decoration: none;
-    transition: background-color 0.3s;
-    /* Transição suave para o hover */
     font-weight: bold;
-    /* Texto em negrito */
+    transition: background-color 0.3s, color 0.3s; /* Transição suave */
 }
 
 #menu ul li a:hover {
-    background-color: #DB7093;
-    /* Cor de fundo rosa ao passar o mouse */
+    background-color: #000000; /* Cor de fundo ao passar o mouse */
+    color: #f8d302; /* Troca a cor do texto para amarelo */
 }
 
 #menu ul li a:active {
-    background-color: #C71585;
-    /* Cor de fundo ao clicar */
+    background-color: #1408c7; /* Cor de fundo ao clicar */
 }
 
 /* Adiciona uma borda inferior destacada para o item do menu atual */
 #menu ul li a.current {
-    border-bottom: 3px solid #C71585;
+    border-bottom: 3px solid #1408c7;
 }
 
+/* Estilo do banner */
 .banner {
     display: flex;
     flex-direction: column;
     justify-content: center; /* Centraliza o conteúdo verticalmente */
     align-items: center; /* Centraliza o conteúdo horizontalmente */
-    height: 14vh;
+    height: 60vh; /* Ajustado para uma altura mais interessante */
     padding: 50px;
-    background-color: #DB7093;
+    background-color: #1408c7;
     color: white;
     text-align: center;
     margin: 0;
-    position: relative; /* Para posicionar a seta absolutamente dentro do banner */
+    position: relative;
 }
 
 .banner h1 {
-    font-size: 48px; /* Tamanho chamativo para o h1 */
-    margin: 0.5em 0; /* Espaçamento acima e abaixo do h1 */
+    font-size: 4rem; /* Tamanho maior para o título */
+    margin: 0.5em 0;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6); /* Sombra para melhorar a legibilidade */
 }
 
 .banner p {
-    font-size: 24px; /* Tamanho adequado para legibilidade */
+    font-size: 1.5rem; /* Tamanho médio para o texto */
     margin-bottom: 2em; /* Aumenta o espaço acima da seta */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
 }
 
+/* Estilo da seção de conteúdo */
 .conteudo {
-    background-color: #f4f4f4;
-    color: #333;
-    padding: 40px 0; /* Adiciona um padding vertical para espaçamento */
+    background-color: #05022e;
+    color: #f0f0f0;
+    padding: 40px 0;
 }
 
 .container {
-    max-width: 800px; /* Limita a largura máxima do texto */
+    max-width: 800px; /* Limita a largura máxima do conteúdo */
     margin: 0 auto; /* Centraliza o container */
     padding: 20px;
-    background-color: white; /* Fundo branco para destacar o texto */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para profundidade */
-    border-radius: 8px; /* Borda arredondada para uma aparência suave */
+    background-color: #ffffff;
+    color: #333;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra mais suave */
 }
 
 .conteudo h2 {
-    text-align: center; /* Centraliza o título */
-    margin-bottom: 20px; /* Espaçamento abaixo do título */
+    text-align: center;
+    font-size: 2rem; /* Tamanho maior para o título */
+    margin-bottom: 20px;
 }
 
 .conteudo p {
-    text-align: justify; /* Justifica o texto para melhor leitura */
-    line-height: 1.6; /* Espaçamento de linha para melhor leitura */
+    text-align: justify;
+    line-height: 1.8; /* Espaçamento de linha para melhor leitura */
+    font-size: 1.1rem;
 }
 
+/* Estilo do footer */
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #333; /* Cor de fundo do rodapé */
-    color: white; /* Cor do texto */
+    background-color: #333;
+    color: #f8d302; /* Cor de texto amarela para o rodapé */
     font-size: 14px;
-    bottom: 0;
 }
 
 footer p {
-    margin: 5px 0; /* Espaçamento entre as linhas de texto */
-    text-align: center;
+    margin: 5px 0;
 }
 
-@media screen and (max-width: 1140px){
-
-    .Intro1, .banner{
-        display: none;
+/* Responsividade */
+@media screen and (max-width: 1140px) {
+    .Intro1, .banner {
+        display: none; /* Oculta a classe "Intro1" e o "banner" em telas menores */
     }
     
+    #menu ul {
+        flex-direction: column; /* Alinha os itens do menu em uma coluna */
+    }
+
+    .banner h1 {
+        font-size: 3rem; /* Tamanho menor para telas pequenas */
+    }
+
+    .banner p {
+        font-size: 1.2rem;
+    }
+
+    .container {
+        padding: 15px; /* Menos padding em telas menores */
+    }
+
+    .conteudo {
+        padding: 20px 0; /* Menos padding no conteúdo */
+    }
 }

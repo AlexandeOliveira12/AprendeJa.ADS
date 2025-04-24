@@ -1,16 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz Mulheres-Techs</title>
-    <link rel="stylesheet" type="text/css" href="css/quiz.css">
-    <link rel="shortcut icon" type="imagex/png" href="./img/icon.png">
+    <link rel="stylesheet" href="css/quiz.css">
+    <link rel="shortcut icon" href="./img/icon.png" type="image/png">
 </head>
 
 <body>
-
     <nav id="menu">
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -19,36 +18,40 @@
         </ul>
     </nav>
 
-    <h1 class="Quiz-name">Quiz Tecnologia</h1>
-    <form id="quizForm">
-        <div class="question">
-            <p>1. Qual foi a primeira programadora da história, conhecida por seu trabalho com o "Motor Analítico" de
-                Charles Babbage no século XIX?</p>
-            <label><input type="radio" name="q1" value="a"> A) Ada Lovelace</label><br>
-            <label><input type="radio" name="q1" value="b"> B) Grace Hopper</label><br>
-            <label><input type="radio" name="q1" value="c"> C) Katherine Johnson</label><br>
-        </div>
-        <div class="question">
-            <p>2. Quem é considerada a "mãe da internet", responsável pela criação do primeiro compilador de programação
-                de computadores e uma das primeiras linguagens de programação, COBOL?</p>
-            <label><input type="radio" name="q2" value="a"> A) Ada Lovelace</label><br>
-            <label><input type="radio" name="q2" value="b"> B) Hedy Lamarr</label><br>
-            <label><input type="radio" name="q2" value="c"> C) Grace Hopper</label><br>
-        </div>
-        <div class="question">
-            <p>3. Quem liderou a equipe responsável pelo desenvolvimento do software de orientação de voo que ajudou a Apollo 11 a pousar na Lua em 1969?</p>
-            <label><input type="radio" name="q3" value="a"> A) Radia Perlman</label><br>
-            <label><input type="radio" name="q3" value="b"> B) Margaret Hamilton</label><br>
-            <label><input type="radio" name="q3" value="c"> C) Marissa Mayer</label><br>
-        </div>
-        <button type="button" onclick="submitQuiz()">Enviar Respostas</button>
-    </form>
-    <div id="results"></div>
+    <main class="quiz-container">
+        <h1 class="quiz-title">Quiz: T.I no mundo!</h1>
 
+        <form id="quizForm">
+            <div class="question">
+                <p>1. Qual foi a primeira programadora da história, conhecida por seu trabalho com o "Motor Analítico" de Charles Babbage no século XIX?</p>
+                <label><input type="radio" name="q1" value="a"> Ada Lovelace</label><br>
+                <label><input type="radio" name="q1" value="b"> Grace Hopper</label><br>
+                <label><input type="radio" name="q1" value="c"> Katherine Johnson</label>
+            </div>
+
+            <div class="question">
+                <p>2. Quem é considerada a "mãe da internet", responsável pela criação do primeiro compilador e da linguagem COBOL?</p>
+                <label><input type="radio" name="q2" value="a"> Ada Lovelace</label><br>
+                <label><input type="radio" name="q2" value="b"> Hedy Lamarr</label><br>
+                <label><input type="radio" name="q2" value="c"> Grace Hopper</label>
+            </div>
+
+            <div class="question">
+                <p>3. Quem liderou o desenvolvimento do software de voo da Apollo 11 em 1969?</p>
+                <label><input type="radio" name="q3" value="a"> Radia Perlman</label><br>
+                <label><input type="radio" name="q3" value="b"> Margaret Hamilton</label><br>
+                <label><input type="radio" name="q3" value="c"> Marissa Mayer</label>
+            </div>
+
+            <button type="button" class="submit-btn" onclick="submitQuiz()">Enviar Respostas</button>
+        </form>
+
+        <div id="results"></div>
+    </main>
 
     <footer class="footer">
         <p><strong>&copy; 2024 SAP. Todos os direitos reservados.</strong></p>
-        <p><strong>Desenvolvido Grupo de Estudantes da UNIP</strong></p>
+        <p><strong>Desenvolvido por Grupo de Estudantes da UNIP</strong></p>
     </footer>
 
     <script src="js/quiz.js"></script>

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tecnologia da Informação</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" type="imagex/png" href="./img/icon.png">
+    <link rel="shortcut icon" type="image/png" href="./img/icon.png">
 </head>
 
 <body>
@@ -17,68 +17,72 @@
             <li><a href="quiz.html">Quiz</a></li>
         </ul>
     </nav>
-    <div class="banner">
-        <h1>Bem-vindo a Tech Page</h1>
-        <p>O seu ponto de partida para dominar a tecnologia, explorar inovações e transformar ideias em realidade.</p>
+
+    <header class="banner">
+        <div class="banner-content">
+            <img src="./img/unip.png" alt="Logo UNIP" class="logo-unip">
+            <h1>Bem-vindo ao PIM da Tech Page!</h1>
+        </div>
+
+        <div class="citacao">
+            <p>"A tecnologia move o mundo"</p>
+            <span class="autor">— Steve Jobs</span>
+        </div>
+
         <a href="#conteudo" class="scroll-down" onclick="scrollToContent()">
             <img src="img/seta.png" alt="Descer" />
         </a>
-    </div>
+    </header>
 
-    <div class="conteudo-section">
-        <div id="conteudo">
-            <div class="intro-container">
+    <main>
+        <!-- Seções de conteúdo -->
+        <section class="conteudo-section">
+            <div id="conteudo" class="intro-container">
                 <h2>TITULO 01</h2>
                 <p>CONTEUDO 01</p>
             </div>
-        </div>
-    </div>
+        </section>
 
-    <!-- Seção 1 -->
-    <div class="conteudo-section black-bg image-left">
-        <div class="container">
-            <img src="img/IMAGE01.jpg">
-            <div class="text-content">
-                <h3>TITULO 02</h3>
-                <p><strong>CONTEUDO 02</p>
+        <section class="conteudo-section black-bg image-left">
+            <div class="container">
+                <img src="img/IMAGE01.jpg" alt="Imagem 1">
+                <div class="text-content">
+                    <h3>TITULO 02</h3>
+                    <p><strong>CONTEUDO 02</strong></p>
+                </div>
             </div>
-        </div>
-    </div>
+        </section>
 
-    <!-- Seção 2 -->
-    <div class="conteudo-section white-bg image-right">
-        <div class="container">
-            <img src="img/IMAGE02.jpg">
-            <div class="text-content">
-                <h3>TITULO 03</h3>
-                <p>CONTEUDO 03</p>
-                </p>
+        <section class="conteudo-section white-bg image-right">
+            <div class="container">
+                <img src="img/IMAGE02.jpg" alt="Imagem 2">
+                <div class="text-content">
+                    <h3>TITULO 03</h3>
+                    <p>CONTEUDO 03</p>
+                </div>
             </div>
-        </div>
-    </div>
+        </section>
 
-    <!-- Seção 3 -->
-    <div class="conteudo-section black-bg image-left">
-        <div class="container">
-            <img src="img/IMAGE03.jpg">
-            <div class="text-content">
-                <h3>TITULO 04</h3>
-                <p>CONTEUDO 04</p>
+        <section class="conteudo-section black-bg image-left">
+            <div class="container">
+                <img src="img/IMAGE03.jpg" alt="Imagem 3">
+                <div class="text-content">
+                    <h3>TITULO 04</h3>
+                    <p>CONTEUDO 04</p>
+                </div>
             </div>
-        </div>
-    </div>
+        </section>
 
-    <!-- Seção 4 -->
-    <div class="conteudo-section white-bg image-right">
-        <div class="container">
-            <img src="img/IMAGE04.jpg">
-            <div class="text-content">
-                <h3>TITULO 05</h3>
-                <p>CONTEUDO 05</p>
-
+        <section class="conteudo-section white-bg image-right">
+            <div class="container">
+                <img src="img/IMAGE04.jpg" alt="Imagem 4">
+                <div class="text-content">
+                    <h3>TITULO 05</h3>
+                    <p>CONTEUDO 05</p>
+                </div>
             </div>
-        </div>
-    </div>
+        </section>
+    </main>
 
     <footer>
         <p>&copy; 2024 SAP. Todos os direitos reservados.</p>
@@ -86,6 +90,6 @@
     </footer>
 
     <script src="js/script.js"></script>
-
 </body>
+
 </html>
