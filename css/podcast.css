@@ -46,8 +46,8 @@ body {
 }
 
 #menu ul li a:hover {
-    background-color: #000000; /* Cor de fundo ao passar o mouse */
-    color: #f8d302; /* Troca a cor do texto para amarelo */
+    background-color: #fcfcfc; /* Cor de fundo ao passar o mouse */
+    color: #000000; /* Troca a cor do texto para amarelo */
 }
 
 #menu ul li a:active {
@@ -120,7 +120,7 @@ footer {
     text-align: center;
     padding: 20px;
     background-color: #333;
-    color: #f8d302; /* Cor de texto amarela para o rodapé */
+    color: #ffffff; /* Cor de texto amarela para o rodapé */
     font-size: 14px;
 }
 

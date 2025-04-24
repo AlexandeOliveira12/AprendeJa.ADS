@@ -41,7 +41,7 @@ body {
 
 #menu ul li a {
     display: block;
-    color: white;
+    color: rgb(0, 0, 0);
     /* Cor do texto */
     text-align: center;
     padding: 14px 16px;
@@ -51,9 +51,9 @@ body {
 }
 
 #menu ul li a:hover {
-    background-color: #000000;
+    background-color: #ffffff;
     /* Cor de fundo ao passar o mouse */
-    color: #fff;
+    color: #000000;
 }
 
 #menu ul li a:active {
