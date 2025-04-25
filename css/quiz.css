@@ -77,7 +77,7 @@ h1 {
 #quizForm {
     max-width: 600px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 70px;
     background-color: #f8f6f6;
     /* Fundo claro */
     border-radius: 10px;
@@ -142,23 +142,6 @@ button:active {
 
 #results .incorrect {
     color: red;
-}
-
-/* Estilo do footer */
-footer {
-    text-align: center;
-    padding: 5px;
-    background-color: #333; /* Cor de fundo do rodapé */
-    color: white; /* Cor do texto */
-    font-size: 14px;
-    bottom: 0;
-    width: 100%;
-    position: absolute;
-}
-
-footer p {
-    margin: 5px 0;
-    text-align: center;
 }
 
 /* Responsividade para dispositivos menores */
