@@ -2,7 +2,7 @@ body {
     padding-top: 50px;
     margin: 0;
     padding: 0;
-    background: linear-gradient(135deg, #0c0c0a, #0b0b8b); /* Definindo o degradê */
+    background: linear-gradient(135deg, #0c0c0a, #210085); /* Definindo o degradê */
     height: 100vh; /* Tornando o degradê cobrir toda a altura da página */
     display: flex;
     justify-content: center;

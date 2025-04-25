@@ -67,7 +67,7 @@ body {
     align-items: center; /* Centraliza o conteúdo horizontalmente */
     height: 60vh; /* Ajustado para uma altura mais interessante */
     padding: 50px;
-    background-color: #1408c7;
+    background-color: #210085;
     color: white;
     text-align: center;
     margin: 0;
@@ -88,7 +88,7 @@ body {
 
 /* Estilo da seção de conteúdo */
 .conteudo {
-    background-color: #05022e;
+    background-color: #ffffff;
     color: #f0f0f0;
     padding: 40px 0;
 }
