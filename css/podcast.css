@@ -91,6 +91,7 @@ body {
     background-color: #ffffff;
     color: #f0f0f0;
     padding: 40px 0;
+    padding-top: 80px;
 }
 
 .container {
@@ -129,28 +130,71 @@ footer p {
 }
 
 /* Responsividade */
-@media screen and (max-width: 1140px) {
-    .Intro1, .banner {
-        display: none; /* Oculta a classe "Intro1" e o "banner" em telas menores */
+@media screen and (max-width: 768px) {
+    body {
+        padding-top: 80px;
     }
-    
+
+    /* MENU: empilha e centraliza os links */
     #menu ul {
-        flex-direction: column; /* Alinha os itens do menu em uma coluna */
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #menu ul li a {
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    /* BANNER: oculta o banner em telas pequenas */
+    .banner {
+        display: none; /* Oculta o banner */
     }
 
     .banner h1 {
-        font-size: 3rem; /* Tamanho menor para telas pequenas */
+        font-size: 2rem;
     }
 
     .banner p {
-        font-size: 1.2rem;
+        font-size: 1rem;
+        margin-bottom: 1em;
     }
 
+    /* CONTAINER: ajusta o padding e largura */
     .container {
-        padding: 15px; /* Menos padding em telas menores */
+        width: 90%;
+        padding: 10px;
     }
 
     .conteudo {
-        padding: 20px 0; /* Menos padding no conteúdo */
+        padding: 20px 10px;
+        padding-top: 80px;
+    }
+
+    iframe {
+        height: 300px; /* Reduz altura dos players Spotify */
+    }
+
+    footer {
+        font-size: 12px;
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        padding-top: 80px;
+    }
+
+    .banner h1 {
+        font-size: 1.5rem;
+    }
+
+    .banner p {
+        font-size: 0.9rem;
+    }
+
+    iframe {
+        height: 250px;
     }
 }
